@@ -16,15 +16,20 @@
 
 using namespace std;
 
+string decodeEncryption(string encryptedWord)
+{
+    string decodedWord = encryptedWord;
+
+    for (int i = 0; i < encryptedWord.length(); i++)
+    {
+        char reverseAlpha = 'a' + ('z' - encryptedWord.at(i));
+        decodedWord.at(i) = reverseAlpha;
+    }
+    return decodedWord;
+}
+
 int main()
 {
-    string encryptedWord = "nzgskfaaovhzivufm";
-    string decodedWord;
-    
-    char originalAlpha = 'a';
-    char reverseAlpha = 'z';
-
-
 
     // OS independent program termination sequence. 
 #ifdef _WIN32
