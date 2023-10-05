@@ -30,6 +30,12 @@ string decodeEncryption(string encryptedWord)
 
 int main()
 {
+    string encryptedWord = "nzgskfaaovhzivufm";
+    //cin >> encryptedWord;
+
+    string decodedWord = decodeEncryption(encryptedWord);
+
+    cout << decodedWord << endl;
 
     // OS independent program termination sequence. 
 #ifdef _WIN32
