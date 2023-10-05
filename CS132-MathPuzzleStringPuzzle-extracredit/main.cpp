@@ -25,6 +25,17 @@ int main()
     char reverseAlpha = 'z';
 
 
+
+    // OS independent program termination sequence. 
+#ifdef _WIN32
+    cout << endl;
+    system("pause");
+#else
+    cout << endl;
+    cout << "Press any key to continue . . . ";
+    cin.get();
+#endif
+    return 0;
 }
 
 /*
