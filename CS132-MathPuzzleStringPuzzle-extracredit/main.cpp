@@ -51,6 +51,14 @@ int main()
 
 /*
 
+Output:
+
+mathpuzzlesarefun
+
+*/
+
+/*
+
 nzgskfaaovhzivufm
 
 EvCC Math Awareness Month
